@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <link rel="icon" type="/image/png" href="../../Login/img/tm.ico"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <title>Editar Usuario</title>
+    </head>
+    <body>
+         
+        
+        <form align="center" name="form1" method="post" action="../Controlador/editar_usuarios.php" >
+            <div style="height: 200px;">
+            <br></br>
+            <div class="container border">
+                
+                <h1>Editar Usuarios Registrados</h1>
+                 
+  <div class="form-group">
+      <div class="float-left" style="margin-left:5px;"><h4>Correo:</h4></div>
+     <label for="exampleInputEmail1"></label>
+     <input type="text" name="correo" value="<?php echo $correo;?>" class="form-control" id="exampleInputText" aria-describedby="textHelp" placeholder="Edite numero interno del bus abordado" style="width: 99%; margin-left:5px;">
+    
+    <div class="float-left" style="margin-left:5px;"><h4>Contraseña:</h4></div>
+    <label for="exampleInputEmail1"></label>
+    <input type="text" name="contrasena" value="<?php echo $contrasena;?>" class="form-control" id="exampleInputText" aria-describedby="textHelp" placeholder="Edite el usuario" style="width: 99%; margin-left:5px;">
+    
+     <div class="float-left" style="margin-left:5px;"><h4>Tipo Usuario</h4></div>
+    <label for="exampleInputEmail1"></label>
+    <input type="text" name="tipo_usuarios"  class="form-control" id="exampleInputText" aria-describedby="textHelp" placeholder="Edite el usuario" value="<?php echo $tipo_usuarios;?>" style="width: 99%; margin-left:5px;">
+    
+       
+      <br></br>
+      <td><input type="hidden" name="idusuario" value="<?php echo $_GET['idusuario'];?"></td>
+       <button type="submit" name="update" class="btn btn-primary">Editar Usuario</button> 
+     
+      <br></br>
+     
+           </div>
+                
+            </div>
+</span>  
+        </form>
+    </div>
+            
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    </body>
+</html>
