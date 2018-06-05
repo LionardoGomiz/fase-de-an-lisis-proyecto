@@ -38,14 +38,11 @@ try {
         $_SESSION["correo"]=$_POST["contrasena"];
         
         if(isset($_SESSION["correo"])){
-            if ($_SESSION["correo"]["administrador"]){
                 
-            }
+            
 		 header("location:../Vista/panel_de_control.php");
-        }	  
-        
-        }elseif ($_SESSION["correo"]) {
-            if ($_SESSION["correo"]["usuario"]){
+             
+        }else{
                 
                 header("location:../Vista/panel_de_usuario_u.php");
                        
@@ -72,7 +69,3 @@ try {
     
 </html> 
 
-
-?>
-
-</html>
