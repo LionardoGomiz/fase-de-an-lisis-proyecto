@@ -1,0 +1,56 @@
+@import "normalize.css";
+body{
+   background-image: url("../img/biarticulado.jpg");
+  width: 100%;
+  height: 2000px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+
+}
+.formulario {
+    border: red 2px solid;
+    width: 22%;
+    margin: 40%;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: burlywood;
+
+}
+
+#correo{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contraseña{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#boton{
+
+align-items: center;
+    background-color: #00cc00;
+}
+h6{
+    font-size: 25pt;
+}
+
+.texto{
+    text-align: center;
+   color: white;
+    font-weight: bold;
+    text-shadow: red 6px 6px 6px;
+}
+
+.tm{
+    width: 20%;
+}
+
+
+
+  
+
+
+
